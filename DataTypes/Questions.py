@@ -685,6 +685,93 @@ def add_item_tuple():
     print(f"After adding: {some_tuple}")
 
 
+def tuple_to_string():
+    """
+    Ques no.41: Write a Python program to convert a tuple to a string.
+
+    """
+
+    #Code
+    some_tuple = ('h', 'e', 'l', 'l')
+    some_string = ''.join(some_tuple)
+
+    print(f"Tuple: {some_tuple}")
+    print(f"String: {some_string}")
+
+
+def list_to_tuple():
+    """
+    Ques no 42: Write a Python program to convert a list to a tuple.
+
+    """
+
+    #Code
+    some_tuple = (1, 2, 3)
+    some_list = list(some_tuple)
+
+    print(f"Tuple: {some_tuple}")
+    print(f"List: {some_list}")
+
+
+def remove_item_tuple():
+    """
+    Ques no.43: Write a Python program to remove an item from a tuple.
+    
+    """
+
+    #Code
+    some_tuple = (1, 2, 3)
+    temp_list = list(some_tuple)
+
+    print(f"Tuple: {some_tuple}")
+    remove = int(input("Enter the item to remove: "))
+    temp_list.remove(remove)
+    some_tuple = tuple(temp_list)
+
+    print(f"Final Tuple: {some_tuple}")
+
+
+def slice_tuple():
+    """
+    Ques no.44: Write a Python program to slice a tuple.
+
+    """
+
+    #Code
+    some_tuple = (1, 2, 3)
+    print(f"Tuple: {some_tuple}")
+
+    slice = int(input("Which index do you want to slice: "))
+    print(some_tuple[slice+1:])
+
+
+def index_tuple():
+    """
+    Ques no.45: Write a Python program to find the index of an item of a tuple.
+
+    """
+
+    #Code
+    some_tuple = (1, 2, 3)
+    print(f"Tuple: {some_tuple}")
+    number = int(input("Which number index do you want to find: "))
+    try:
+        print(f"The index of {number} is {some_tuple.index(number)}")
+    except ValueError:
+        print("There is no such number in the tuple.")
+
+
+def len_tuple():
+    """
+    Ques no.46: Write a Python program to find the length of a tuple
+
+    """
+
+    #Code
+    some_tuple = (1, 2, 3)
+    print(f"Tuple: {some_tuple}")
+    print(f"The length of tuple is {some_tuple.__len__()}")
+
 
 
 functions = {
@@ -728,10 +815,10 @@ functions = {
     38: remove_key,
     39: unpack_tuple, 
     40: add_item_tuple,
-    41: None, 
-    42: None,
-    43: None, 
-    44: None,
-    45: None, 
-    46: None
+    41: tuple_to_string, 
+    42: list_to_tuple,
+    43: remove_item_tuple, 
+    44: slice_tuple,
+    45: index_tuple, 
+    46: len_tuple
 }

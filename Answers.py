@@ -15,8 +15,8 @@ while True:
             print(f"\nQuestion number {option}: ")
             func = Questions.functions[option]
             func()
-        except TypeError:
-            print("Enter number!!")
+        # except TypeError:
+        #     print("Enter number!!")
         except KeyError:
             print("Question number does not exist!!")
 
