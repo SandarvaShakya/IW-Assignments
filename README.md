@@ -2,4 +2,6 @@
 
 Question detailas are on the code itself.
 
-<img src = "https://i.imgur.com/B2Yl3kQ.png" alt = "Answers">
+<p align= "center">
+    <img src = "https://i.imgur.com/E0H0jiD.png" alt = "Answers" >
+</p>
